@@ -30,6 +30,11 @@ export const routes: Routes = [
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
       },
+      {
+        path: 'device',
+        loadChildren: './views/deviceManager/deviceManager.module#DeviceManagerModule'
+      },
+      
     ]
   },
   /*{

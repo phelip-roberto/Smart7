@@ -8,10 +8,16 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent { 
 
+  recoverPass: boolean = false;
+
   constructor(private router: Router) { }
 
   doLogin() {
-    console.log('AQUI');
     this.router.navigate(['/dashboard'])
+  }
+
+  sendRecover() {
+    alert("E-mail de recuperação de senha enviado");
+    this.recoverPass = !this.recoverPass;
   }
 }

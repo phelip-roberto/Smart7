@@ -9,30 +9,54 @@
                 <img src="../../../assets/img/logo.png" alt="Logo" class="img-fluid">
               </div>
               <div class="card-body">
-                <form>
-                  <h1 class="text-orange">Login Administrativo</h1>
-                  <p class="text-muted">Acesso Restrito</p>
+                <form *ngIf="!recoverPass, else elseBlock">
+                  <h1 class="text-orange">Login</h1>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="icon-user"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Login" autocomplete="username" required>
+                    <input type="text" class="form-control" placeholder="Usuário" autocomplete="username" required>
                   </div>
                   <div class="input-group mb-4">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="icon-lock"></i></span>
                     </div>
-                    <input type="password" class="form-control" placeholder="Password" autocomplete="current-password" required>
+                    <input type="password" class="form-control" placeholder="Senha" autocomplete="current-password" required>
                   </div>
                   <div class="row">
                     <div class="col-6">
-                      <button type="button" (click)="doLogin()" class="btn btn-outline-dark px-4">Entrar</button>
+                      <button type="button" (click)="doLogin()" class="btn btn-outline-dark px-4">Login</button>
                     </div>
                     <div class="col-6 text-right">
-                      <button type="button" class="btn btn-link text-orange px-0">Esqueceu a Senha?</button>
+                      <button type="button" (click)="recoverPass = !recoverPass" class="btn btn-link text-orange px-0">Esqueceu a Senha?</button>
                     </div>
                   </div>
                 </form>
+                <ng-template #elseBlock>
+                  <form>
+                    <h1 class="text-orange">Recuperar Senha</h1>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="icon-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Nome do Usuário (Login)" autocomplete="username" required>
+                    </div>
+                    <div class="input-group mb-4">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="cui-envelope-closed"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="E-mail" autocomplete="email" required>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-12 my-auto text-center text-md-left">
+                        <button type="button" (click)="recoverPass = !recoverPass" class="btn btn-outline-dark px-4">Cancelar</button>
+                      </div>
+                      <div class="col-md-6 col-12 my-auto text-center text-md-right">
+                        <button type="button" (click)="sendRecover()" class="btn btn-outline-dark px-4">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </ng-template>
               </div>
             </div>
           </div>
