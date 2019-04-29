@@ -1,0 +1,27 @@
+.text,
+a.text {
+    &-orange {
+        color: $brand-orange !important;
+    }
+    &-darkgrey{
+        color: #6c6c6c !important;
+    }
+    &-blue {
+        color: $brand-blue !important;
+    }
+    &-success {
+        color: $brand-success !important;
+    }
+    &-green-whatsapp {
+        color: $brand-green-whatsapp
+    }
+    &-white {
+        color: $brand-white !important;
+    }
+    &-yellow{
+        color: $brand-yellow !important;
+    }
+    &-red {
+        color: $brand-red !important;
+    }
+}

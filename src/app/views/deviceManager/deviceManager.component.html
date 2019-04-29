@@ -1,18 +1,88 @@
 <div class="animated fadeIn">
-  <div class="row">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Dados</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Periféricos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Ações</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Aplicativos</a>
-      </li>
-    </ul>
+  <div class="row d-flex justify-content-center">
+    <ngb-tabset>
+      <ngb-tab title="Dados">
+        <ng-template ngbTabContent>
+          <form>
+            <div class="form-group">
+              <label for="inputName">Nome</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="textareaDescription">Descrição</label>
+              <textarea class="form-control" id="textareaDescription" placeholder="Realize a descrição neste campo." rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <p>Ativo</p>
+              <label class="switch switch-3d switch-secondary">
+                <input type="checkbox" class="switch-input" checked>
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+            <div class="form-group">
+              <p>Perfil Padrão</p>
+              <label class="switch switch-3d switch-secondary">
+                <input type="checkbox" class="switch-input" checked>
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+          </form>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Periféricos">
+        <ng-template ngbTabContent>
+          <form>
+              <div class="form-group" *ngFor="let periferico of perifericos">
+                  <p>{{ periferico.name }}</p>
+                  <label class="switch switch-3d switch-secondary">
+                    <input type="checkbox" class="switch-input" [checked]="periferico.value">
+                    <span class="switch-slider"></span>
+                  </label>
+                </div>
+          </form>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Ações">
+        <ng-template ngbTabContent>
+          <form>
+            <div class="form-group" *ngFor="let acao of acoes">
+              <p>{{ acao.name }}</p>
+              <label class="switch switch-3d switch-secondary">
+                <input type="checkbox" class="switch-input" [checked]="acao.value">
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+          </form>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Aplicativos">
+        <ng-template ngbTabContent>
+          <div class="row">
+            <div class="col-4">
+              <form>
+                <div class="form-group">
+                  <label for="selectCategory">Categoria</label>
+                  <select class="form-control" id="selectCategory">
+                    <option selected>Todos</option>
+                    <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.name }}</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectFirm">Empresa</label>
+                  <select class="form-control" id="selectFirm">
+                      <option selected>Todos</option>
+                      <option *ngFor="let empresa of empresas" [value]="empresa.id">{{ empresa.name }}</option>
+                  </select>
+                </div>
+              </form>
+              <p class="mt-3">Area de Aplicativos</p>
+            </div>
+            <div class="col-6 offset-2">
+              dispositivo
+            </div>
+          </div>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
   </div>
 </div>

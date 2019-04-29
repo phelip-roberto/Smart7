@@ -1,1 +1,8 @@
 // Here you can add other styles
+.switch-secondary .switch-input:checked + .switch-slider {
+   background-color: #ff6a00;
+}
+
+.switch-3d .switch-slider {
+   background-color: $grey-light;
+}
