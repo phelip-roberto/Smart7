@@ -14,10 +14,7 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent,
-    data: {
-      title: 'Login Page'
-    }
+    loadChildren: './views/login/login.module#LoginModule'
   },
   {
     path: '',
@@ -34,7 +31,6 @@ export const routes: Routes = [
         path: 'device',
         loadChildren: './views/deviceManager/deviceManager.module#DeviceManagerModule'
       },
-      
     ]
   },
   /*{

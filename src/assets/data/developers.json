@@ -1,0 +1,189 @@
+{
+   "data": [
+      {
+         "id": 1,
+         "name": "Company1",
+         "category_id": 1
+      },
+      {
+         "id": 2,
+         "name": "Company2",
+         "category_id": 1
+      },
+      {
+         "id": 3,
+         "name": "Company3",
+         "category_id": 1
+      },
+      {
+         "id": 4,
+         "name": "Company4",
+         "category_id": 2
+      },
+      {
+         "id": 5,
+         "name": "Company5",
+         "category_id": 2
+      },
+      {
+         "id": 6,
+         "name": "Company6",
+         "category_id": 2
+      },
+      {
+         "id": 7,
+         "name": "Company7",
+         "category_id": 3
+      },
+      {
+         "id": 8,
+         "name": "Company8",
+         "category_id": 3
+      },
+      {
+         "id": 9,
+         "name": "Company9",
+         "category_id": 3
+      },
+      {
+         "id": 10,
+         "name": "Company10",
+         "category_id": 3
+      },
+      {
+         "id": 11,
+         "name": "Company11",
+         "category_id": 4
+      },
+      {
+         "id": 12,
+         "name": "Company12",
+         "category_id": 4
+      },
+      {
+         "id": 13,
+         "name": "Company13",
+         "category_id": 4
+      },
+      {
+         "id": 14,
+         "name": "Company14",
+         "category_id": 4
+      },
+      {
+         "id": 15,
+         "name": "Company15",
+         "category_id": 4
+      },
+      {
+         "id": 16,
+         "name": "Company16",
+         "category_id": 4
+      },
+      {
+         "id": 17,
+         "name": "Company17",
+         "category_id": 4
+      },
+      {
+         "id": 18,
+         "name": "Company18",
+         "category_id": 4
+      },
+      {
+         "id": 19,
+         "name": "Company19",
+         "category_id": 4
+      },
+      {
+         "id": 20,
+         "name": "Company20",
+         "category_id": 5
+      },
+      {
+         "id": 21,
+         "name": "Company21",
+         "category_id": 6
+      },
+      {
+         "id": 22,
+         "name": "Company22",
+         "category_id": 6
+      },
+      {
+         "id": 23,
+         "name": "Company23",
+         "category_id": 6
+      },
+      {
+         "id": 24,
+         "name": "Company24",
+         "category_id": 6
+      },
+      {
+         "id": 25,
+         "name": "Company25",
+         "category_id": 6
+      },
+      {
+         "id": 26,
+         "name": "Company26",
+         "category_id": 6
+      },
+      {
+         "id": 27,
+         "name": "Company27",
+         "category_id": 6
+      },
+      {
+         "id": 28,
+         "name": "Company28",
+         "category_id": 6
+      },
+      {
+         "id": 29,
+         "name": "Company29",
+         "category_id": 7
+      },
+      {
+         "id": 30,
+         "name": "Company30",
+         "category_id": 7
+      },
+      {
+         "id": 31,
+         "name": "Company31",
+         "category_id": 7
+      },
+      {
+         "id": 32,
+         "name": "Company32",
+         "category_id": 7
+      },
+      {
+         "id": 33,
+         "name": "Company33",
+         "category_id": 7
+      },
+      {
+         "id": 34,
+         "name": "Company34",
+         "category_id": 7
+      },
+      {
+         "id": 35,
+         "name": "Company35",
+         "category_id": 7
+      },
+      {
+         "id": 36,
+         "name": "Company36",
+         "category_id": 7
+      },
+      {
+         "id": 37,
+         "name": "Company37",
+         "category_id": 7
+      }
+   ]
+}

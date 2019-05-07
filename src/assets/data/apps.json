@@ -1,0 +1,374 @@
+{
+   "data": [
+      {
+         "identifier": "Identificador1",
+         "label": "Identificador1",
+         "version": 1.0,
+         "category": "Categoria1",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador1",
+         "permissions": "Todas",
+         "company": "Company1"
+      },
+      {
+         "identifier": "Identificador2",
+         "label": "Identificador2",
+         "version": 1.0,
+         "category": "Categoria1",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador2",
+         "permissions": "Todas",
+         "company": "Company2"
+      },
+      {
+         "identifier": "Identificador3",
+         "label": "Identificador3",
+         "version": 1.0,
+         "category": "Categoria1",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador3",
+         "permissions": "Todas",
+         "company": "Company3"
+      },
+      {
+         "identifier": "Identificador4",
+         "label": "Identificador4",
+         "version": 1.0,
+         "category": "Categoria2",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador4",
+         "permissions": "Todas",
+         "company": "Company4"
+      },
+      {
+         "identifier": "Identificador5",
+         "label": "Identificador5",
+         "version": 1.0,
+         "category": "Categoria2",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador5",
+         "permissions": "Todas",
+         "company": "Company5"
+      },
+      {
+         "identifier": "Identificador6",
+         "label": "Identificador6",
+         "version": 1.0,
+         "category": "Categoria2",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador6",
+         "permissions": "Todas",
+         "company": "Company6"
+      },
+      {
+         "identifier": "Identificador7",
+         "label": "Identificador7",
+         "version": 1.0,
+         "category": "Categoria3",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador7",
+         "permissions": "Todas",
+         "company": "Company7"
+      },
+      {
+         "identifier": "Identificador8",
+         "label": "Identificador8",
+         "version": 1.0,
+         "category": "Categoria3",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador8",
+         "permissions": "Todas",
+         "company": "Company8"
+      },
+      {
+         "identifier": "Identificador9",
+         "label": "Identificador9",
+         "version": 1.0,
+         "category": "Categoria3",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador9",
+         "permissions": "Todas",
+         "company": "Company9"
+      },
+      {
+         "identifier": "Identificador10",
+         "label": "Identificador10",
+         "version": 1.0,
+         "category": "Categoria3",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador10",
+         "permissions": "Todas",
+         "company": "Company10"
+      },
+      {
+         "identifier": "Identificador11",
+         "label": "Identificador11",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador11",
+         "permissions": "Todas",
+         "company": "Company11"
+      },
+      {
+         "identifier": "Identificador12",
+         "label": "Identificador12",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador12",
+         "permissions": "Todas",
+         "company": "Company12"
+      },
+      {
+         "identifier": "Identificador13",
+         "label": "Identificador13",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador13",
+         "permissions": "Todas",
+         "company": "Company13"
+      },
+      {
+         "identifier": "Identificador14",
+         "label": "Identificador14",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador14",
+         "permissions": "Todas",
+         "company": "Company14"
+      },
+      {
+         "identifier": "Identificador15",
+         "label": "Identificador15",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador15",
+         "permissions": "Todas",
+         "company": "Company15"
+      },
+      {
+         "identifier": "Identificador16",
+         "label": "Identificador16",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador16",
+         "permissions": "Todas",
+         "company": "Company16"
+      },
+      {
+         "identifier": "Identificador17",
+         "label": "Identificador17",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador17",
+         "permissions": "Todas",
+         "company": "Company17"
+      },
+      {
+         "identifier": "Identificador18",
+         "label": "Identificador18",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador18",
+         "permissions": "Todas",
+         "company": "Company18"
+      },
+      {
+         "identifier": "Identificador19",
+         "label": "Identificador19",
+         "version": 1.0,
+         "category": "Categoria4",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador19",
+         "permissions": "Todas",
+         "company": "Company19"
+      },
+      {
+         "identifier": "Identificador20",
+         "label": "Identificador20",
+         "version": 1.0,
+         "category": "Categoria5",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador20",
+         "permissions": "Todas",
+         "company": "Company20"
+      },
+      {
+         "identifier": "Identificador21",
+         "label": "Identificador21",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador21",
+         "permissions": "Todas",
+         "company": "Company21"
+      },
+      {
+         "identifier": "Identificador22",
+         "label": "Identificador22",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador22",
+         "permissions": "Todas",
+         "company": "Company22"
+      },
+      {
+         "identifier": "Identificador23",
+         "label": "Identificador23",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador23",
+         "permissions": "Todas",
+         "company": "Company23"
+      },
+      {
+         "identifier": "Identificador24",
+         "label": "Identificador24",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador24",
+         "permissions": "Todas",
+         "company": "Company24"
+      },
+      {
+         "identifier": "Identificador25",
+         "label": "Identificador25",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador25",
+         "permissions": "Todas",
+         "company": "Company25"
+      },
+      {
+         "identifier": "Identificador26",
+         "label": "Identificador26",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador26",
+         "permissions": "Todas",
+         "company": "Company26"
+      },
+      {
+         "identifier": "Identificador27",
+         "label": "Identificador27",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador27",
+         "permissions": "Todas",
+         "company": "Company27"
+      },
+      {
+         "identifier": "Identificador28",
+         "label": "Identificador28",
+         "version": 1.0,
+         "category": "Categoria6",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador28",
+         "permissions": "Todas",
+         "company": "Company28"
+      },
+      {
+         "identifier": "Identificador29",
+         "label": "Identificador29",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador29",
+         "permissions": "Todas",
+         "company": "Company29"
+      },
+      {
+         "identifier": "Identificador30",
+         "label": "Identificador30",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador30",
+         "permissions": "Todas",
+         "company": "Company30"
+      },
+      {
+         "identifier": "Identificador31",
+         "label": "Identificador31",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador31",
+         "permissions": "Todas",
+         "company": "Company31"
+      },
+      {
+         "identifier": "Identificador32",
+         "label": "Identificador32",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador32",
+         "permissions": "Todas",
+         "company": "Company32"
+      },
+      {
+         "identifier": "Identificador33",
+         "label": "Identificador33",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador33",
+         "permissions": "Todas",
+         "company": "Company33"
+      },
+      {
+         "identifier": "Identificador34",
+         "label": "Identificador34",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador34",
+         "permissions": "Todas",
+         "company": "Company34"
+      },
+      {
+         "identifier": "Identificador35",
+         "label": "Identificador35",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador35",
+         "permissions": "Todas",
+         "company": "Company35"
+      },
+      {
+         "identifier": "Identificador36",
+         "label": "Identificador36",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador36",
+         "permissions": "Todas",
+         "company": "Company36"
+      },
+      {
+         "identifier": "Identificador37",
+         "label": "Identificador37",
+         "version": 1.0,
+         "category": "Categoria7",
+         "logo": "cui-screen-smartphone",
+         "description": "Identificador37",
+         "permissions": "Todas",
+         "company": "Company37"
+      }
+   ]
+}

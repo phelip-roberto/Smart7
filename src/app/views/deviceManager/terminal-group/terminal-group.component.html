@@ -1,0 +1,57 @@
+<div class="animated fadeIn">
+  <div class="row d-flex justify-content-center ngTab">
+    <ngb-tabset>
+      <ngb-tab title="Dados">
+        <ng-template ngbTabContent>
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="inputName">Nome</label>
+                  <input type="text" class="form-control" name="inputName" id="inputName" [(ngModel)]="group.name"
+                    placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <label for="selectProfile">Perfil</label>
+                  <select class="form-control" id="selectProfile" >
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="textareaDescription">Descrição</label>
+                  <textarea class="form-control" name="inputDescription" id="textareaDescription" [(ngModel)]="group.description"
+                    placeholder="Realize a descrição neste campo."  rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <p>Grupo Padrão</p>
+                  <label class="switch switch-3d switch-secondary">
+                    <input type="checkbox" (input)="group.patternGroup = !group.patternGroup" class="switch-input"
+                      [checked]="group.patternGroup">
+                    <span class="switch-slider"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="background">Plano de Fundo</label>
+                  <input type="text" class="form-control" name="background" id="background"
+                    placeholder="Background">
+                </div>
+              </div>
+            </div>
+          </form>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Terminais">
+        <ng-template ngbTabContent>
+          
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Aplicativos">
+        <ng-template ngbTabContent>
+          
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

@@ -42,6 +42,20 @@ export const navItems: NavData[] = [
     name: 'Device Manager',
     url: '/device',
     icon: 'cui-wrench',
+    children: [
+      {
+        name: 'Perfil de Terminal',
+        url: '/device/profile',
+      },
+      {
+        name: 'Grupo de Terminais',
+        url: '/device/group',
+      },
+      {
+        name: 'Terminal',
+        url: '/device/terminal',
+      }
+    ]
   },
   {
     divider: true

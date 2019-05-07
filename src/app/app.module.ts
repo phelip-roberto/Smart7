@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
@@ -18,7 +19,6 @@ import { AppComponent } from './app.component';
 // Import containers
 import { DefaultLayoutComponent } from './containers';
 
-import { LoginComponent } from './views/login/login.component';
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -55,13 +55,12 @@ import { ChartsModule } from 'ng2-charts';
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     ChartsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
     ...APP_CONTAINERS,
-    LoginComponent,
-    
   ],
   providers: [{
     provide: LocationStrategy,

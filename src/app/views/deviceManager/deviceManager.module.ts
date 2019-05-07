@@ -5,10 +5,21 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CommonModule } from '@angular/common';
 
-//Page
-import { DeviceManagerComponent } from './deviceManager.component';
+// Page
 import { DeviceManagerRoutingModule } from './deviceManager-routing.module';
+import { TerminalGroupComponent } from './terminal-group/terminal-group.component';
+import { TerminalProfileComponent } from './terminal-profile/terminal-profile.component';
+import { TerminalComponent } from './terminal/terminal.component';
+
+// Componentes Visuais
 import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
+import { DragDropModule } from 'primeng/dragdrop';
+import { TableModule } from 'primeng/table';
+
+// Services
+import { AppsManagerService } from './../../service/apps-manager.service';
+import { DeviceManagerService } from '../../service/device-manager.service';
+
 
 @NgModule({
   imports: [
@@ -18,8 +29,14 @@ import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
     BsDropdownModule,
     ButtonsModule.forRoot(),
     NgbTabsetModule,
-    CommonModule
+    CommonModule,
+    TableModule,
+    DragDropModule
   ],
-  declarations: [ DeviceManagerComponent ]
+  declarations: [ TerminalGroupComponent, TerminalProfileComponent, TerminalComponent ],
+  providers: [
+    DeviceManagerService,
+    AppsManagerService
+  ]
 })
 export class DeviceManagerModule { }

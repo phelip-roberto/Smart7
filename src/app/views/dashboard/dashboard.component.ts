@@ -6,13 +6,12 @@ import { Router } from '@angular/router';
   templateUrl: 'dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
-  //Variáveis preenchidas de forma estática, que após a integração serão preenchidas com a resposta da requisição
+  // Variáveis preenchidas de forma estática, que após a integração serão preenchidas com a resposta da requisição
   accessLevel: string;
   user: string;
   login: string;
   lastAccess: string;
   version: string;
-  
 
   constructor() {
     this.accessLevel = 'Administrativo';
