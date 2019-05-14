@@ -25,3 +25,21 @@ a.text {
         color: $brand-red !important;
     }
 }
+
+.fa {
+    &-6 {
+        font-size: 20em;
+    }
+    &-5 {
+        font-size: 12em;
+    }
+    &-4 {
+        font-size: 7em;
+    }
+    &-3 {
+        font-size: 4em;
+    }
+    &-2 {
+        font-size: 2em;
+    }
+}

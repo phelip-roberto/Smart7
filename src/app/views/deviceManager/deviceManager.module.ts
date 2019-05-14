@@ -5,6 +5,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CommonModule } from '@angular/common';
 
+
 // Page
 import { DeviceManagerRoutingModule } from './deviceManager-routing.module';
 import { TerminalGroupComponent } from './terminal-group/terminal-group.component';
@@ -15,6 +16,10 @@ import { TerminalComponent } from './terminal/terminal.component';
 import { NgbTabsetModule } from '@ng-bootstrap/ng-bootstrap';
 import { DragDropModule } from 'primeng/dragdrop';
 import { TableModule } from 'primeng/table';
+import { FileUploadModule } from 'primeng/fileupload';
+import { GrowlModule } from 'primeng/growl';
+import { ListboxModule } from 'primeng/listbox';
+import { DropdownModule } from 'primeng/dropdown';
 
 // Services
 import { AppsManagerService } from './../../service/apps-manager.service';
@@ -31,7 +36,11 @@ import { DeviceManagerService } from '../../service/device-manager.service';
     NgbTabsetModule,
     CommonModule,
     TableModule,
-    DragDropModule
+    DragDropModule,
+    FileUploadModule,
+    GrowlModule,
+    ListboxModule,
+    DropdownModule
   ],
   declarations: [ TerminalGroupComponent, TerminalProfileComponent, TerminalComponent ],
   providers: [

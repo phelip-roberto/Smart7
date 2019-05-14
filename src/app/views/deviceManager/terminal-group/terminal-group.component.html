@@ -1,9 +1,10 @@
 <div class="animated fadeIn">
+  <p-growl [(value)]="msgs" sticky=true></p-growl>
   <div class="row d-flex justify-content-center ngTab">
     <ngb-tabset>
       <ngb-tab title="Dados">
         <ng-template ngbTabContent>
-          <form>
+          <form class="mb-3">
             <div class="row">
               <div class="col-6">
                 <div class="form-group">
@@ -13,43 +14,180 @@
                 </div>
                 <div class="form-group">
                   <label for="selectProfile">Perfil</label>
-                  <select class="form-control" id="selectProfile" >
+                  <select class="form-control" id="selectProfile">
                     <option selected>Todos</option>
                   </select>
+                  <!--<h3 class="h6">Perfil</h3>
+                  <p-dropdown [options]="empresas" [(ngModel)]="selectedProfile" [style]="{'font-size':'20px'}"
+                    placeholder="Todos" name="selectedCompany" optionLabel="profile">
+                  </p-dropdown>-->
                 </div>
                 <div class="form-group">
                   <label for="textareaDescription">Descrição</label>
-                  <textarea class="form-control" name="inputDescription" id="textareaDescription" [(ngModel)]="group.description"
-                    placeholder="Realize a descrição neste campo."  rows="3"></textarea>
+                  <textarea class="form-control" name="inputDescription" id="textareaDescription"
+                    [(ngModel)]="group.description" placeholder="Realize a descrição neste campo." rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <p>Grupo Padrão</p>
                   <label class="switch switch-3d switch-secondary">
-                    <input type="checkbox" (input)="group.patternGroup = !group.patternGroup" class="switch-input"
-                      [checked]="group.patternGroup">
+                    <input type="checkbox" (input)="group.defaultGroup = !group.defaultGroup" class="switch-input"
+                      [checked]="group.defaultGroup">
                     <span class="switch-slider"></span>
                   </label>
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
-                  <label for="background">Plano de Fundo</label>
-                  <input type="text" class="form-control" name="background" id="background"
-                    placeholder="Background">
+                  <label for="background">Plano de Fundo</label><br>
+                  <!--<input type="text" class="form-control" name="background" id="background"
+                    placeholder="Background">-->
+                  <p-fileUpload mode="basic" id="background" name="background" chooseLabel="Browse ..." class=""
+                    accept="image/*" maxFileSize="1000000" (onUpload)="onBasicUpload($event)"></p-fileUpload>
                 </div>
               </div>
             </div>
           </form>
+          <div class="d-flex justify-content-end">
+            <button type="button" (click)="save()" class="btn btn-primary">Salvar</button>
+          </div>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="Terminais">
         <ng-template ngbTabContent>
-          
+          <form class="mb-3">
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="inputImei">IMEI</label>
+                  <input type="text" class="form-control" name="inputImei" id="inputImei" [(ngModel)]="terminals.imei"
+                    placeholder="IMEI">
+                </div>
+                <div class="form-group">
+                  <label for="inputSerial">Serial</label>
+                  <input type="text" class="form-control" name="inputSerial" id="inputSerial"
+                    [(ngModel)]="terminals.serial" placeholder="Serial">
+                </div>
+                <div class="form-group">
+                  <label for="selectModel">Modelo</label>
+                  <select class="form-control" id="selectModel">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectApp">Aplicativo</label>
+                  <select class="form-control" id="selectApp">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectVersion">Versão</label>
+                  <select class="form-control" id="selectVersion">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-6 offset-1">
+                <div class="row my-5">
+                  <p-table [value]="table1" class="table-striped table-hover table-sm">
+                    <ng-template pTemplate="header">
+                      <tr>
+                        <th>IMEI</th>
+                        <th>Serial</th>
+                        <th>Grupo Atual</th>
+                      </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-table>
+                      <tr>
+                        <td w-40>{{ table.imei }}</td>
+                        <td w-40>{{ table.serial }}</td>
+                        <td w-20>{{ table.group }}</td>
+                      </tr>
+                    </ng-template>
+                  </p-table>
+                </div>
+                <div class="row my-5">
+                  <p-table [value]="table2" class="table-striped table-hover table-sm">
+                    <ng-template pTemplate="header">
+                      <tr>
+                        <th>IMEI</th>
+                        <th>Serial</th>
+                        <th></th>
+                      </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-table>
+                      <tr>
+                        <td>{{ table.imei }}</td>
+                        <td>{{ table.serial }}</td>
+                        <td class="text-center"><i class="cui-circle-x"></i></td>
+                      </tr>
+                    </ng-template>
+                  </p-table>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="d-flex justify-content-end">
+            <button type="button" (click)="save()" class="btn btn-primary">Salvar</button>
+          </div>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="Aplicativos">
         <ng-template ngbTabContent>
-          
+          <form class="mb-3">
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="selectVersion">Categoria</label>
+                  <select class="form-control" id="selectVersion">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectVersion">Desenvolvedor</label>
+                  <select class="form-control" id="selectVersion">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectVersion">Aplicativo</label>
+                  <select class="form-control" id="selectVersion">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="selectVersion">Versão</label>
+                  <select class="form-control" id="selectVersion">
+                    <option selected>Todos</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-8">
+                <p-table [value]='table3' class="table-striped table-hover table-sm">
+                  <ng-template pTemplate="header">
+                    <tr>
+                      <th>Categoria</th>
+                      <th>Desenvolvedor</th>
+                      <th>Aplicativo</th>
+                      <th>Versão</th>
+                      <th></th>
+                    </tr>
+                  </ng-template>
+                  <ng-template pTemplate="body" let-table>
+                    <tr>
+                      <td>{{ table.category }}</td>
+                      <td>{{ table.developer }}</td>
+                      <td>{{ table.app }}</td>
+                      <td>{{ table.version }}</td>
+                      <td class="text-center"><i class="cui-circle-x"></i></td>
+                    </tr>
+                  </ng-template>
+                </p-table>
+              </div>
+            </div>
+          </form>
+          <div class="d-flex justify-content-end">
+            <button type="button" (click)="save()" class="btn btn-primary">Salvar</button>
+          </div>
         </ng-template>
       </ngb-tab>
     </ngb-tabset>

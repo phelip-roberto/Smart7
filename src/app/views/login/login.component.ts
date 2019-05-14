@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Message } from './../../domain/message';
-import { MessageService } from './../../service/service-message.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,20 +13,15 @@ export class LoginComponent {
   msgs: Message[] = [];
   recoverPass = false;
 
-  constructor(private router: Router, private messageService: MessageService) { }
+  constructor(private router: Router) { }
 
   doLogin() {
-    this.messageService.add({severity: 'success', summary: 'Success Message', detail: 'Login Realizado'});
     this.router.navigate(['/dashboard']);
   }
 
-  addSingle() {
-    console.log('Teste');
-    this.messageService.add({severity:'success', summary:'Service Message', detail:'Via MessageService'});
-  }
-
   sendRecover() {
-    this.messageService.add({severity: 'success', summary: 'Success Message', detail: 'E-mail de recuperação de senha enviado'});
+    this.msgs.push({severity: 'success', summary: 'Recuperação de Senha',
+      detail: 'Um e-mail foi enviado para que você possa recuperar sua senha!'});
     this.recoverPass = !this.recoverPass;
   }
 }

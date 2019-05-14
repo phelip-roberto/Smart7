@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { App } from './../../../domain/app';
 import { Category } from '../../../domain/category';
 import { Developers } from '../../../domain/developers';
+import { Message } from '../../../domain/message';
 
 import { AppsManagerService } from './../../../service/apps-manager.service';
 import { DeviceManagerService } from './../../../service/device-manager.service';
@@ -16,8 +17,10 @@ import { DeviceManagerService } from './../../../service/device-manager.service'
 export class TerminalProfileComponent implements OnInit {
 
   categorias: Category[];
-  selectedCategory: any;
+  selectedCategory: Category;
   empresas: Developers[];
+  selectedCompany: Developers;
+  teste: Developers[] = [];
   perifericos: any;
   acoes: any;
   availableApps: App[];
@@ -37,6 +40,8 @@ export class TerminalProfileComponent implements OnInit {
       this.acoes = this.deviceService.getAcoes();
 
     }
+
+  msgs: Message[] = [];
 
   ngOnInit() {
     this.selectedApps = [];
@@ -73,4 +78,8 @@ export class TerminalProfileComponent implements OnInit {
     return index;
   }
 
+  save() {
+    this.msgs.push({severity: 'success', summary: 'Informações Salvas!',
+      detail: 'As informações sobre o perfil de terminal foram salvas com sucesso!'});
+  }
 }

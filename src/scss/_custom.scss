@@ -9,13 +9,21 @@
 
 .ngTab {
    ngb-tabset {
-      width: 80%;
+      width: 100%;
    }
-   
+
    .form-control {
       border: 1px solid #888;
       resize: none;
    }   
+}
+
+@media (min-width: 991.98px) { 
+   .ngTab {
+      ngb-tabset {
+         width: 80%;
+      }
+   }
 }
 
 :host ::ng-deep button {

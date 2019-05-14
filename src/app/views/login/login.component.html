@@ -1,8 +1,7 @@
 <div class="app-body">
   <main class="main d-flex align-items-center">
     <div class="container">
-      <p-growl></p-growl>
-      <p-toast></p-toast>
+      <p-growl [(value)]="msgs" sticky=true></p-growl>
       <div class="row">
         <div class="col-6 mx-auto">
           <div class="card-group">
@@ -27,7 +26,7 @@
                   </div>
                   <div class="row">
                     <div class="col-6">
-                      <button type="button" (click)="addSingle()" class="btn btn-outline-dark px-4">Login</button>
+                      <button type="button" (click)="doLogin()" class="btn btn-outline-dark px-4">Login</button>
                     </div>
                     <div class="col-6 text-right">
                       <button type="button" (click)="recoverPass = !recoverPass" class="btn btn-link text-orange px-0">Esqueceu a Senha?</button>

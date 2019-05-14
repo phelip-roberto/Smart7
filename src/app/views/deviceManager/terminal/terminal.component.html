@@ -1,5 +1,45 @@
 <div class="animated fadeIn">
   <div class="row d-flex justify-content-center">
-    
+    <div class="col-10 mx-auto">
+      <div class="row">
+        <div class="col-10 d-flex ">
+            <ul class="list-group list-group-horizontal flex-wrap">
+                <li class="list-group-item mx-2"><b>IMEI:</b> {{ terminalInfos.imei }}</li>
+                <li class="list-group-item mx-2"><b>Fabricante:</b> {{ terminalInfos.producer }}</li>
+                <li class="list-group-item mx-2"><b>Ult. Comunicação:</b> {{ terminalInfos.lastCom }}</li>
+                <li class="list-group-item mx-2"><b>Serial:</b> {{ terminalInfos.serial }}</li>
+                <li class="list-group-item mx-2"><b>Modelo:</b> {{ terminalInfos.model }}</li>
+             </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 text-center">
+          <i class="fa {{ batteryIcon }} fa-4 mt-4"></i>
+          <br>
+          <p class="text-center h6">Bateria - {{ batteryLevel }}%</p>
+        </div>
+      </div>
+      <div class="row my-5">
+          <h3 class="h5">Aplicativos</h3>
+        <p-table [value]='aplicativos' class="table-striped table-hover table-sm">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Categoria</th>
+              <th>Desenvolvedor</th>
+              <th>Aplicativo</th>
+              <th>Versão</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-aplicativo>
+            <tr>
+              <td>{{ aplicativo.category }}</td>
+              <td>{{ aplicativo.developer }}</td>
+              <td>{{ aplicativo.app }}</td>
+              <td>{{ aplicativo.version }}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
   </div>
 </div>
