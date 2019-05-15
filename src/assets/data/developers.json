@@ -3,186 +3,223 @@
       {
          "id": 1,
          "name": "Company1",
+         "status": true,
          "category_id": 1
       },
       {
          "id": 2,
          "name": "Company2",
+         "status": true,
          "category_id": 1
       },
       {
          "id": 3,
          "name": "Company3",
+         "status": true,
          "category_id": 1
       },
       {
          "id": 4,
          "name": "Company4",
+         "status": true,
          "category_id": 2
       },
       {
          "id": 5,
          "name": "Company5",
+         "status": true,
          "category_id": 2
       },
       {
          "id": 6,
          "name": "Company6",
+         "status": true,
          "category_id": 2
       },
       {
          "id": 7,
          "name": "Company7",
+         "status": true,
          "category_id": 3
       },
       {
          "id": 8,
          "name": "Company8",
+         "status": true,
          "category_id": 3
       },
       {
          "id": 9,
          "name": "Company9",
+         "status": true,
          "category_id": 3
       },
       {
          "id": 10,
          "name": "Company10",
+         "status": true,
          "category_id": 3
       },
       {
          "id": 11,
          "name": "Company11",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 12,
          "name": "Company12",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 13,
          "name": "Company13",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 14,
          "name": "Company14",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 15,
          "name": "Company15",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 16,
          "name": "Company16",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 17,
          "name": "Company17",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 18,
          "name": "Company18",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 19,
          "name": "Company19",
+         "status": true,
          "category_id": 4
       },
       {
          "id": 20,
          "name": "Company20",
+         "status": true,
          "category_id": 5
       },
       {
          "id": 21,
          "name": "Company21",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 22,
          "name": "Company22",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 23,
          "name": "Company23",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 24,
          "name": "Company24",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 25,
          "name": "Company25",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 26,
          "name": "Company26",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 27,
          "name": "Company27",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 28,
          "name": "Company28",
+         "status": true,
          "category_id": 6
       },
       {
          "id": 29,
          "name": "Company29",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 30,
          "name": "Company30",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 31,
          "name": "Company31",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 32,
          "name": "Company32",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 33,
          "name": "Company33",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 34,
          "name": "Company34",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 35,
          "name": "Company35",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 36,
          "name": "Company36",
+         "status": true,
          "category_id": 7
       },
       {
          "id": 37,
          "name": "Company37",
+         "status": true,
          "category_id": 7
       }
    ]

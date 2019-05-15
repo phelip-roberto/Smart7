@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Message } from '../../../domain/message';
-import { CategoryGroup } from './../../../domain/categoryGroup';
+import { TerminalGroup } from './../../../domain/terminalGroup';
+import { Terminal } from '../../../domain/terminal';
+
 
 @Component({
   selector: 'app-terminal-group',
@@ -12,16 +14,27 @@ export class TerminalGroupComponent implements OnInit {
 
   msgs: Message[] = [];
 
-  group: CategoryGroup = {
-    defaultGroup: true
+  terminalGroup: TerminalGroup = {
+    name: '',
+    description: '',
+    default: true,
+    wallpaper: '',
+    profile: '',
+    terminal: '',
+    appCategory: '',
+    app: '',
+    appVersion: ''
   };
 
-  terminals: any = {
+  terminal: Terminal = {
+    serialNumber: '',
     imei: '',
-    serial: '',
     model: '',
-    app: '',
-    version: ''
+    batteryLevel: 75,
+    geolocation: '',
+    signalLevel: 30,
+    terminalGroup: '',
+    lastCom: ''
   };
 
   table1: any = [

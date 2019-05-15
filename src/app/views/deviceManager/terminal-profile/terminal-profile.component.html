@@ -94,7 +94,7 @@
                   <li *ngFor="let app of availableApps" pDraggable="apps" (onDragStart)="dragStart($event, app)"
                     (onDragEnd)="dragEnd($event)">
                     <i class="cui-screen-smartphone fa-2x"></i>
-                    {{ app.identifier }} - {{ app.category }}
+                    {{ app.name }} - {{ app.appCategory }}
                   </li>
                 </ul>
               </div>
@@ -102,7 +102,7 @@
             <div class="col-6 offset-2" pDroppable="apps" (onDrop)="drop($event)">
               <ul  class="list-group list-group-horizontal flex-wrap" style="list-style-type: none">
                 <li class="list-group-item" *ngFor="let app of selectedApps">
-                  <span><i class="{{ app.logo }} fa-2x"></i> {{ app.label }}</span>
+                  <span><i class="{{ app.logoFile }} fa-2x"></i> {{ app.packageName }}</span>
                 </li>
               </ul>
             </div>

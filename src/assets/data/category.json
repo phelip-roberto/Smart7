@@ -2,31 +2,38 @@
    "data": [
       {
          "id": 1,
-         "name": "Categoria1"
+         "name": "Categoria1",
+         "description": "Categoria1"
       },
       {
          "id": 2,
-         "name": "Categoria2"
+         "name": "Categoria2",
+         "description": "Categoria2"
       },
       {
          "id": 3,
-         "name": "Categoria3"
+         "name": "Categoria3",
+         "description": "Categoria3"
       },
       {
          "id": 4,
-         "name": "Categoria4"
+         "name": "Categoria4",
+         "description": "Categoria4"
       },
       {
          "id": 5,
-         "name": "Categoria5"
+         "name": "Categoria5",
+         "description": "Categoria5"
       },
       {
          "id": 6,
-         "name": "Categoria6"
+         "name": "Categoria6",
+         "description": "Categoria6"
       },
       {
          "id": 7,
-         "name": "Categoria7"
+         "name": "Categoria7",
+         "description": "Categoria7"
       }
    ]
 }

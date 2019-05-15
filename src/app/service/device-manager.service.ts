@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Developers } from './../domain/developers';
+import { Developer } from './../domain/developer';
 import { Category } from './../domain/category';
 
 @Injectable({
@@ -34,7 +34,7 @@ export class DeviceManagerService {
   getEmpresas() {
     return this.Http.get<any>('assets/data/developers.json')
       .toPromise()
-      .then(res => <Developers[]>res.data)
+      .then(res => <Developer[]>res.data)
       .then(data => data);
   }
 

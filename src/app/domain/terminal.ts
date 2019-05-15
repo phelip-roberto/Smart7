@@ -1,11 +1,11 @@
 export interface Terminal {
-   id?;
-   serialNumber?;
-   imei?;
-   model?;
-   batteryLevel?;
-   geolocation?;
-   signalLevel?;
-   terminalGroup?;
-   lastCom?;
+   id?: any;
+   serialNumber?: string;
+   imei?: string;
+   model?: string;
+   batteryLevel?: number;
+   geolocation?: string;
+   signalLevel?: number;
+   terminalGroup?: any;
+   lastCom?: any;
 }

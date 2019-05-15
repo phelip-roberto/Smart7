@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { App } from './../../../domain/app';
 import { Category } from '../../../domain/category';
-import { Developers } from '../../../domain/developers';
+import { Developer } from '../../../domain/developer';
 import { Message } from '../../../domain/message';
 
 import { AppsManagerService } from './../../../service/apps-manager.service';
@@ -18,9 +18,8 @@ export class TerminalProfileComponent implements OnInit {
 
   categorias: Category[];
   selectedCategory: Category;
-  empresas: Developers[];
-  selectedCompany: Developers;
-  teste: Developers[] = [];
+  empresas: Developer[];
+  selectedCompany: Developer;
   perifericos: any;
   acoes: any;
   availableApps: App[];
@@ -70,7 +69,7 @@ export class TerminalProfileComponent implements OnInit {
   findIndex(app: App) {
     let index = -1;
     for (let i = 0; i < this.availableApps.length; i++) {
-      if (app.identifier === this.availableApps[i].identifier) {
+      if (app.id === this.availableApps[i].id) {
         index = i;
         break;
       }

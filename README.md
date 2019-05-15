@@ -16,6 +16,10 @@ Projeto frontend do sistema Smart7 pertencente a empresa Ger7. Em tal projeto se
 
 * Documentation for get started with the latest version of [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/);
 
+* Documentation for a get started with [PrimeNg](https://www.primefaces.org/primeng/#/), that is a rich set of open source native Angular UI components;
+
+* Documentation for a get started with [NgBootstrap](https://ng-bootstrap.github.io/#/getting-started), that contains a set of native Angular directives based on Bootstrap's markup and CSS;
+
 ## Installation
 
 ### Clone repo

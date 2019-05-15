@@ -9,7 +9,7 @@
               <div class="col-6">
                 <div class="form-group">
                   <label for="inputName">Nome</label>
-                  <input type="text" class="form-control" name="inputName" id="inputName" [(ngModel)]="group.name"
+                  <input type="text" class="form-control" name="inputName" id="inputName" [(ngModel)]="terminalGroup.name"
                     placeholder="Nome">
                 </div>
                 <div class="form-group">
@@ -25,13 +25,13 @@
                 <div class="form-group">
                   <label for="textareaDescription">Descrição</label>
                   <textarea class="form-control" name="inputDescription" id="textareaDescription"
-                    [(ngModel)]="group.description" placeholder="Realize a descrição neste campo." rows="3"></textarea>
+                    [(ngModel)]="terminalGroup.description" placeholder="Realize a descrição neste campo." rows="3"></textarea>
                 </div>
                 <div class="form-group">
                   <p>Grupo Padrão</p>
                   <label class="switch switch-3d switch-secondary">
-                    <input type="checkbox" (input)="group.defaultGroup = !group.defaultGroup" class="switch-input"
-                      [checked]="group.defaultGroup">
+                    <input type="checkbox" (input)="terminalGroup.default = !terminalGroup.default" class="switch-input"
+                      [checked]="terminalGroup.default">
                     <span class="switch-slider"></span>
                   </label>
                 </div>
@@ -59,13 +59,13 @@
               <div class="col-4">
                 <div class="form-group">
                   <label for="inputImei">IMEI</label>
-                  <input type="text" class="form-control" name="inputImei" id="inputImei" [(ngModel)]="terminals.imei"
+                  <input type="text" class="form-control" name="inputImei" id="inputImei" [(ngModel)]="terminal.imei"
                     placeholder="IMEI">
                 </div>
                 <div class="form-group">
                   <label for="inputSerial">Serial</label>
                   <input type="text" class="form-control" name="inputSerial" id="inputSerial"
-                    [(ngModel)]="terminals.serial" placeholder="Serial">
+                    [(ngModel)]="terminal.serial" placeholder="Serial">
                 </div>
                 <div class="form-group">
                   <label for="selectModel">Modelo</label>

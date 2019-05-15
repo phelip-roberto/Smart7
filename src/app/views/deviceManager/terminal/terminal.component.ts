@@ -42,7 +42,7 @@ export class TerminalComponent implements OnInit {
       return 'fa-battery-0 text-darkgrey';
     } else if (this.batteryLevel > 10 && this.batteryLevel < 50) {
       return 'fa-battery-1 text-red';
-    } else if (this.batteryLevel == 50) {
+    } else if (this.batteryLevel === 50) {
       return 'fa-battery-2 text-orange';
     } else if (this.batteryLevel > 50 && this.batteryLevel < 80) {
       return 'fa-battery-3 text-yellow';
